@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		body {
+			background-image: url("resources/bg.jpg");
+			margin: 0;
+		}
+		#JSCSCENE {
+			background-image: url("resources/sand.png");
+		}
+		#container {
+			/* background-color: black; */
+			border: 10px solid transparent;
+			-webkit-border-image: url(https://www.w3schools.com/css/border.png) 30 stretch;
+			-o-border-image: url(https://www.w3schools.com/css/border.png) 30 stretch;
+			border-image: url(https://www.w3schools.com/css/border.png) 30 stretch;
+			
+			background-color: #000000;
+		}
+		#chat {
+			background-color: #fedcba;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="chat" style="float: left;">
+				<div id="chE">
+					<div id="chMs" style="width: 100%;"></div>
+					<form action="">
+						<input id="chEI" style="width: 70%; border-radius: 5px; background-color: #d3d3d3; border: 1px solid #f1f1f1;">
+						<input id="chES" style="width: 25%; border-radius: 5px; background-color: #d3d3d3; border: 1px solid #f1f1f1; cursor: pointer;" type="submit" value="Enter">
+					</form>
+				</div>
+			</div>
+			<div id="eC" style="height: 32px; background-color: #d3d3d3;">
+				<div id="fE" style="height: 100%; background-color: #ff0000; float: left;"><b id="el" style="color: white; font-size: 28px;">Energy</b></div>
+				<div style="height: 100%; float: right;"><b id="gC" style="color: white; font-size: 28px; margin-right: 5px; float: right;">Golds: 0</b></div>
+				<div id="sE" style="height: 100%; background-color: #00ff00;"></div>
+			</div>
+			<div id="game"></div>
+		</div>
+		
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="JSC.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
